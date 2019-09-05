@@ -6,7 +6,6 @@
   </a>
 </p>
 
-> mqtt2highcharts ===============
 
 ### 🏠 [Homepage](https://github.com/Tatvam/IOT_project)
 
