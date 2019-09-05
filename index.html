@@ -1,0 +1,31 @@
+
+<!-- <head>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src = "test.js" ></script>
+</head>
+<body>
+<div id="graph"></div>
+</body>
+
+   -->
+   <!DOCTYPE html>
+   <html lang="en" dir="ltr">
+     <head>
+       <meta charset="utf-8">
+       <title></title>
+     </head>
+     <body>
+         <div id="test">
+         </div>
+       <script type="text/javascript">
+           let url="http://localhost:8000/test";
+           fetch(url).then(response => response.json())
+           .then( (result) => {
+               console.log('success:', result)
+               let div=document.getElementById('test');
+               div.innerHTML=`title: ${result.title}<br/>message: ${result.message}`;
+           })
+           .catch(error => console.log('error:', error));
+       </script>
+     </body>
+   </html>
